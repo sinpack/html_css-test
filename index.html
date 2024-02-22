@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <title>Html Test</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>1. Create four columns</h3>
+          <p>
+            Using native css or preferably Bootstrap's classes, create four
+            columns of class "bordered" that are displayed in a row of four in
+            large screens and in rows of two in mobile phones.
+          </p>
+        </div>
+      </div>
+      <!-- Task #1: Using native css or preferably Bootstrap's classes, create four columns of class "bordered" that are displayed in a row of four in large screens and in rows of two in mobile phones.
+          
+          Desktop:
+          
+          ┌──────────────┐ ┌──────────────┐ ┌──────────────┐ ┌──────────────┐
+          |   Column #1  | |   Column #2  | |   Column #3  | |   Column #4  |
+          |              | |              | |              | |              |
+          |              | |              | |              | |              |
+          └──────────────┘ └──────────────┘ └──────────────┘ └──────────────┘
+          
+          Mobile:
+          
+          ┌──────────────┐ ┌──────────────┐
+          |   Column #1  | |   Column #2  | 
+          |              | |              | 
+          |              | |              |
+          └──────────────┘ └──────────────┘ 
+          ┌──────────────┐ ┌──────────────┐
+          |   Column #3  | |   Column #4  | 
+          |              | |              | 
+          |              | |              |
+          └──────────────┘ └──────────────┘ 
+          
+          - https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries
+          - https://getbootstrap.com/docs/4.5/layout/grid/
+                    
+      -->
+      <div class="row">
+        <div class="col-md-6 col-lg-3 bordered">Column #1</div>
+        <div class="col-md-6 col-lg-3 bordered">Column #2</div>
+        <div class="col-md-6 col-lg-3 bordered">Column #3</div>
+        <div class="col-md-6 col-lg-3 bordered">Column #4</div>
+      </div>
+      <!-- 
+      Task #2: Using css margins first align the div with class center-me in its container and then position the blue box inside it at 30px from the bottom and 40px from the right
+      -->
+      <h3>2. Position the divs</h3>
+      <p>
+        Using css margins first align the div with class center-me in its
+        container and then position the blue box inside it at 30px from the
+        bottom and 40px from the right
+      </p>
+      <div class="row">
+        <div class="col">
+          <div class="center-me bordered">
+            <div class="blue-box"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Task #3 Using jquery and css implement the button functionality to switch between light and dark themes -->
+      <div class="row">
+        <div class="col">
+          <h3>3. Change the body color scheme</h3>
+          <p>
+            Using jquery and css implement the button functionality to switch
+            between light and dark page themes, for the entire page.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <!-- Task #3  Using css classes and jquery... -->
+          <button type="button" id="light" class="btn btn-light">Light</button>
+          <button type="button" id="dark" class="btn btn-dark">Dark</button>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            quis erat eu velit tristique dictum. Duis sit amet neque sit amet
+            magna ultricies tempus.
+          </p>
+        </div>
+      </div>
+      <!-- Task #4 
+        1) Create an ajax request to this url: 
+        https://jsonplaceholder.typicode.com/posts
+        2) Fetch the 5 first items of the data retrieved above
+        3) Use the "createListItem" function to insert the list items in #list
+        4) Attach a click event to the button that executes the ajax request
+      -->
+      <div class="row">
+        <div class="col">
+          <h3>4. Ajax request</h3>
+          <ol>
+            <li>
+              Create an ajax request to this url:
+              <b>https://jsonplaceholder.typicode.com/posts</b>
+            </li>
+            <li>Fetch the <b>5</b> first items of the data retrieved above</li>
+            <li>
+              Use the "createListItem" function to insert the list items in
+              #list
+            </li>
+            <li>
+              Attach a click event to the #printlist button that executes the
+              ajax request
+            </li>
+          </ol>
+          <button class="btn btn-primary" id="printlist">Get Data</button>
+          <hr />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <ul class="list-group" id="list"></ul>
+        </div>
+      </div>
+
+      <div class="col">
+        <h3>5. Create the card</h3>
+        <p>
+          Use CSS to create the style of the card depicted in the image below on
+          the HTML skeleton provided. <br />
+          <a href="https://postimg.cc/w3xLr2GC" target="_blank"
+            ><img
+              src="https://i.postimg.cc/fWmCJgjR/lorem-box.png"
+              border="0"
+              alt="lorem-box"
+          /></a>
+          <br />
+          The card must have the shadow around it. <br />Use the following
+          values:
+        </p>
+        <div>
+          <ul>
+            <li>padding 10 pixels</li>
+            <li>radius of the corners 20 pixels</li>
+            <li>card width 250 pixels</li>
+            <li>heading font size 18 pixels, body font size 12 pixels</li>
+            <li>height for the red header 30 pixels</li>
+            <li>
+              color for the red part <em>darkred</em>, and for the border
+              <em>#ccc</em>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <!-- style this HTML skeleton -->
+          <div
+            style="
+              width: 250px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              border-radius: 20px;
+            "
+          >
+            <div
+              style="
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                background-color: darkred;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                height: 50px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+              "
+            >
+              <h4 style="font-size: 18px">Lorem</h4>
+            </div>
+            <div>
+              <p
+                style="
+                  font-size: 12px;
+                  text-align: justify;
+                  padding-left: 10px;
+                  padding-right: 10px;
+                  padding-top: 20px;
+                  padding-bottom: 20px;
+                "
+              >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                rutrum auctor justo, at accumsan magna tempor sed.
+              </p>
+            </div>
+          </div>
+          <!-- /style HTML skeleton -->
+        </div>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+/* Task #2 */
+/* center this div in its container */
+.center-me {
+    width: 300px;
+    height: 150px;
+    border: 1px solid #222;
+    margin: auto;
+    /* adjust to the center by margins */
+    position: relative;
+}
+
+/* Position this box at 30px from the bottom and 40px from right inside center-me div */
+.blue-box {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+    bottom: 30px;
+    /* 30px from the bottom */
+    right: 40px;
+    /* 40px from the right */
+    position: absolute;
+    /* only to the parent container */
+}
+
+/* Task #2 end */
+
+/* Task #3
+Add the rules for the colors of the texts, background and borders of the elements.
+
+dark: background: #222, texts: #fff, borders for the bordered divs: #fff
+light: 
+*/
+/* Dark theme */
+.dark {
+    background-color: #222;
+    color: #fff;
+}
+
+.dark .bordered {
+    border-color: #fff;
+}
+
+/* Light theme */
+.light {
+    background-color: #fff;
+    /* Adjust background color for light theme */
+    color: #222;
+}
+
+.light .bordered {
+    border-color: #222;
+}
+
+/* / Task #3 end */
+
+
+/* Generic styles */
+body {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.bordered {
+    border: 1px solid #222;
+}
+
+h3 {
+    padding-top: 30px;
+}
